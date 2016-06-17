@@ -1,11 +1,4 @@
 {
-	"name": "ganttforce-node",
-	"version": "0.0.1",
-	"dependencies": {
-		"express": "4.14.0"
-	}
-}
-{
   "name": "ganttforce-node",
   "version": "0.0.1",
   "engines": {
