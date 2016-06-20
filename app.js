@@ -2,7 +2,8 @@ var express = require('express');
 var stormpath = require('express-stormpath');
 var app = express();
 
-app.set('view engine', 'ejs');  
+app.set('port', process.env.PORT || 3000);
+app.set('view engine', 'ejs');
 
 app.use(stormpath.init(app, { }));
 
