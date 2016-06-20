@@ -14,6 +14,6 @@ app.get('/', function (req, res) {
 
 app.on('stormpath.ready', function () {
   app.listen(app.get('port'), function () {
-    console.log('Example app listening on port ' + process.env.PORT || 3000);
+    console.log('Example app listening on port ' + app.get('port'));
   });
 });
