@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 });
 
 app.on('stormpath.ready', function () {
-  app.listen(process.env.PORT || 3000, function () {
+  app.listen(app.get('port'), function () {
     console.log('Example app listening on port ' + process.env.PORT || 3000);
   });
 });
